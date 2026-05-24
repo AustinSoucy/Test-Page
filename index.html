@@ -90,8 +90,9 @@
         const data = await response.json();
 
         const price = data.bpi.USD.rate;
+        priceElement.textContent = response;
 
-        priceElement.textContent = `$${price}`;
+        //priceElement.textContent = `$${price}`;
         updatedElement.textContent =
           "Last updated: " + new Date().toLocaleTimeString();
 
